@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <Script type="text/javascript">
+
+        /*Nesse código eu fiz muita coisa só para ele ficar bonito no navegador, mas vale a pena entender o código,
+        se entendeu como funciona os 2 códigos antigos esse vai ser fácil*/            
+
+                //Introdução calculadora
+            window.alert("Seja bem vindo à minha calculadora de área poligonos"); 
+
+                //Matei 2 exercícios em um só, e ainda foi um de gorjeta, fiz com que a pessoa escrevesse o núnero referente a calculadora e o armazenasse em uma variável
+            var num = window.prompt("Para calcular a área de um quadrado digite 1, para calcular a área de um triângulo digite 2, para calcular a área de um retângulo digite 3, e pressione OK");
+          
+                //Se o número for igual a 1 cai na operação da área do triângulo
+            if (num == 1){
+            
+                    //Nessa etapa foi o programa pedindo os números para fazer a conta e exibir o resultado em prompt
+                window.alert("Entrando na calculadora de área de quadrado");
+                var lado = window.prompt("Digite o valor do lado do quadrado");
+                parseFloat(lado);
+                resultado = lado*lado;
+                window.alert("A área do seu quadrado é : ")
+                window.alert(resultado);
+                window.alert("Pressione F5 para realizar uma nova operação");
+            
+                //Se o número for igual a 2 cai na operção de área do triângulo
+            }else if (num == 2){
+
+                    //Nessa etapa foi o programa pedindo os números para fazer a conta e exibir o resultado em prompt
+                window.alert("Entrando na calculadora de área de triângulo");
+                var base = window.prompt("Digite o valor da base do triângulo");
+                parseFloat(base);
+                var altura = window.prompt("Digite o valor da altura do seu triângulo");
+                parseFloat(altura);
+                resultado = (base*altura)/2;
+                window.alert("A área do seu triângulo é : ");
+                window.alert(resultado);
+                window.alert("Pressione F5 para realizar uma nova operação");
+
+                //Se o número for igual a 3 cai na operação de área do retângulo 
+            }else if(num == 3){
+
+                    //Nessa etapa foi o programa pedindo os números para fazer a conta e exibir o resultado em prompt
+                window.alert("Entrando na calculadora de área do retângulo");
+                var base = window.prompt("Digite o valor da base do retângulo");
+                parseFloat(base);
+                var altura = window.prompt("Digite o valor da altura do retângulo");
+                parseFloat(altura);
+                resultado = base*altura;
+                window.alert("A área do seu retângulo é : ")
+                window.alert(resultado);
+                window.alert("Pressione F5 para realizar uma nova operação");
+
+                //Se não fosse colocado um número válido, esse else vai fechar o programar e pedir para reiniciar colocando um número válido
+            }else{
+                window.alert("Por favor digite um número válido, por favor atualize a página");
+            }
+
+        </Script>
+    </body>
+</html>

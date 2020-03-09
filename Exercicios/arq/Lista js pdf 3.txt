@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script type="text/javascript">
+
+                //Digitar um número para a variável
+            var num = window.prompt("Digite um número");
+
+                //Tranformar a string em float
+            parseFloat(num);
+
+                //Escrever em prompt
+            window.alert("A metade do seu número é:");
+
+                //Fazer o cálculo e mostrar no prompt
+            window.alert(num/2);
+            window.alert("O dobro do seu número é");
+            window.alert(num*2);
+
+                //mostrar o resultado em texto
+            document.write("A metade do seu número é:");
+            document.write(num/2, "<br>");
+            document.write("O dobro do seu número é");
+            document.write(num*2, "<br>");
+
+               
+        
+        </script>
+    </body>
+
+</html>

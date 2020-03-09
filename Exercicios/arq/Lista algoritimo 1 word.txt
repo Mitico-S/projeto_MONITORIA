@@ -1,0 +1,15 @@
+    // Incluir biblioteca
+#include <stdio.h>
+
+    //A main vai ser um valor inteiro do tipo void
+  int main (void){
+
+        //Printf Exibir na tela
+    printf("Meu canal favorito e' Filipe Deschamps");
+
+        //Retornar 0, já que é uma função Void
+    return 0;
+
+
+
+ }

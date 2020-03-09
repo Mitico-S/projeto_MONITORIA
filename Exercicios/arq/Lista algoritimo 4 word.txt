@@ -1,0 +1,14 @@
+    //Incluir biblioteca
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+    //A main vai ser um valor inteiro do tipo void
+ int main (void) {
+
+    //Criar string nome e armazenar um dado nela
+    char nome[64] = "Heloisa";
+
+    //printar a informação na tela
+     printf("A pessoa chata da minha familia e' %s", nome);
+
+ }

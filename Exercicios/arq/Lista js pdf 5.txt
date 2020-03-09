@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <script type="text/javascript"> 
+
+                //Introdução ao programa
+            window.alert("Boletim online");
+
+                //Digitar as notas
+            var av1 = window.prompt("Digite a primeira nota");
+            var av2 = window.prompt("Digite a segunda nota");
+            var av3 = window.prompt("Digite a terceira nota");
+
+                //Soma
+            var media = (parseFloat(av1) + parseFloat(av2) + parseFloat(av3))/3;
+
+                //Se a media for maior ou igual a 6
+            if (media >= 6){
+
+                //Resultado do if
+            window.alert("Sua média é  :  ");
+            window.alert(media);
+            window.alert("Você passou! Parabéns");
+
+            document.write("Sua média é  :  ");
+            document.write(media, "<br>");
+            document.write("Você passou! Parabéns");
+
+                //Se for menor que 6
+            }else{
+
+                //resultado do else
+            window.alert("Sua média é  :  ");
+            window.alert(media);
+            window.alert("Você ficou, que pena!");
+
+            document.write("Sua média é  :  ");
+            document.write(media, "<br>");
+            document.write("Você ficou, que pena!");
+
+            }
+ </script>
+
+    </body>
+</html>

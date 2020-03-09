@@ -1,0 +1,26 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+
+                //Iniciar programa
+            window.alert("Calculadora");
+
+                //Programa solicitando o primeiro  e segundo número
+            var num = window.prompt("Escreva o 1º número");
+            var num2 = window.prompt("Escreva o 2º Número");
+
+                //Transformando os números em Float para que possa fazer os cálculos
+            var som = parseFloat(num) + parseFloat(num2);
+
+                //Exibir o resultado da soma
+            window.alert(som);
+       
+        </script>
+
+    </body>
+
+
+</html>

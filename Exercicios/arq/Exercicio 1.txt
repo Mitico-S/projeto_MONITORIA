@@ -1,0 +1,29 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+		//Comando HTML pra começar o JS
+        <script type="text/javascript">   
+
+		 //Fiz com que aparecece um prompt na tela para escrever o número desejado e já armazenar na variável ("num1")                                            
+            var num1 = window.prompt("Digite o primeiro número");   
+                 //O navegador recebeu uma string com o número 1, e não consegue calcular uma string, então converti a string para float usando o parseFloat, para que ele pudesse calcular 
+            parseFloat(num1);                                                        
+            var num2 = window.prompt("Digite o segundo número"); 
+            parseFloat(num2);
+            
+		//Nesta etapa fiz operações matemáticas básicas, e o resultado fosse armazenado em uma variável
+            var sub = num1 - num2;                                                    
+            var mul = num1 * num2;
+            var div = num1 / num2;
+            var med = 2/(num1+num2);
+		
+		//Nesta etapa pedi para que pudesse mostrar o resultado das operações feitas acima, e utilizei o <br> (comando HTML) para efeutar a quebra de linha
+            document.write("A subtração dos seus números é     :", sub, "<br>");     
+            document.write("A multiplicação dos seus números é :", mul, "<br>");
+            document.write("A divisão dos seus números é       :", div, "<br>");
+            document.write("A média dos seus números é         :", med, "<br>");
+        </script>
+    </body>
+</html>

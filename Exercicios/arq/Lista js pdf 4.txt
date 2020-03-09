@@ -1,0 +1,35 @@
+<html>
+
+    <body>
+
+      <script type="text/javascript">
+        
+            //Digitar a idade e armazenar em uma variável
+        var idade = window.prompt("Digite a sua idade");
+        parseInt(idade);
+
+            //Se você tiver 18 anos ou mais, é maior de idade
+        if (idade >= 18){
+            
+
+            //Mostrar resultado do if
+            window.alert("Você é maior de idade");
+            document.write("Você é maior de idade");
+
+            //Se a idade for menor que 18
+        }else if (idade < 18){
+
+            //Mostrar resultado Else if
+            window.alert("Você é menor de idade");
+            document.write("Você é menor de idade");
+
+            //Se for digitado uma letra ou um número não inteiro
+        }else{
+
+            window.alert("Por favor Aperte F5 e digite um número válido");
+        }
+        
+    </script>  
+
+    </body>
+</html>

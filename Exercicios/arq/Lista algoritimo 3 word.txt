@@ -1,0 +1,18 @@
+    //Incluir biblioteca
+#include <stdio.h>
+
+    //A main vai ser um valor inteiro do tipo void
+ int main (void) {
+
+    //Criei uma altura em um float
+    float altura;
+
+    //Aderi um valor a altura
+    altura = 1.70;
+
+    //printf                              //O 0.2 é para colocar um limite de casas decimais no float
+    printf("A altura do Filipe Deschamps: %0.2f", altura);
+
+
+ }
+

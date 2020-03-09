@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+
+        <script type="text/javascript">    
+            window.alert("Calculadora de divisão");                                   //Comando HTML pra começar o JS
+            var num1 = window.prompt("Digite o primeiro número");                     //Fiz com que aparecece um prompt na tela para escrever o número desejado e já armazenar na variável ("num1")
+            parseFloat(num1);                                                         //O navegador recebeu uma string com o número 1, e não consegue calcular uma string, então converti a string para float usando o parseFloat, para que ele pudesse calcular
+            var num2 = window.prompt("Digite o segundo número"); 
+            parseFloat(num2);
+                                                                                       
+            var div = num1 / num2;
+
+
+                   //Nesta etapa pedi para que pudesse mostrar o resultado da divisão 
+            document.write("A divisão dos seus números é       :", div,);
+
+        </script>
+    </div>
+    </body>
+</html>

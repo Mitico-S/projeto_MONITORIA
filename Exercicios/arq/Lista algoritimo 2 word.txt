@@ -1,0 +1,20 @@
+    // Incluir biblioteca
+#include <stdio.h>
+
+    //A main vai ser um valor inteiro do tipo void
+ int main (void) {
+
+    //criei uma variável com o nome idade
+    int idade;
+
+    //atribui o valor para a idade
+    idade = 18;
+
+    //Printf Exibir na tela
+    printf("A idade da pessoa que eu gosto e': %i", idade);
+
+    //Retornar 0, já que é uma função Void
+    return 0;
+
+
+ }
