@@ -5191,8 +5191,13 @@ h6 {
 
 /* line 2, /Applications/MAMP/htdocs/palash/cl/august/200 FitFloss Fitness/fitfloss html/sass/_footer.scss */
 .footer-area {
-  background-color: #ff0000;
+  background-image: url("../img/Wallcs.jpg");
+  width: auto;
+  height: auto;
+  background-size: 1700px;
+  background: no repeat;
 }
+
 
 /* line 4, /Applications/MAMP/htdocs/palash/cl/august/200 FitFloss Fitness/fitfloss html/sass/_footer.scss */
 .footer-area .form-control {
