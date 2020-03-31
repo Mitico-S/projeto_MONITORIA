@@ -1,0 +1,1 @@
+Fazer uma function em JS contendo o menu principal, nela eu vou colocar o menu princial e chamar a função no html, evitando com que eu altere todas as vezes todas as páginas no html
