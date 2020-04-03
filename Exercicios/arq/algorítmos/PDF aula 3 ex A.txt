@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+   int main (void){
+
+        printf("Digite o nome\n");
+
+        char nome[64];
+
+        scanf("%s", &nome);
+
+        printf("vai se tornar um grande profissional um dia o %s", nome);
+
+        return 0;
+
+
+    }

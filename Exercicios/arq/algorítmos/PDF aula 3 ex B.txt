@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+
+   int main (void){
+
+        printf("Digite um numero\n");
+
+        float num;
+
+        scanf("%f", &num);
+
+        printf("O dobro do valor e' %0.2f", num * 2);
+
+        return 0;
+
+
+    }
