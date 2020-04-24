@@ -1,0 +1,233 @@
+//1 Leia um número e informe se	o mesmo é positivo,	negativo ou	nulo.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ( ){
+
+
+    int number;
+    printf("Digite um numero: ");
+    scanf("%d", &number);
+
+    if (number == 0)
+    printf("O numero e' nulo!");
+    else{
+        
+    if (number > 0)
+    printf("O numero  e' positivo!");
+    else
+    printf("O numero  e' negativo!");
+
+ }
+    printf("\n");
+    system("pause");
+    return (0);
+}
+
+//2 Leia um nome, preço de	custo e	preço de venda de um produto, e	mostra se houve lucro,	
+prejuízo ou empate.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ( )
+{
+    char nome [20];
+    float precoCusto, precoVenda;
+    printf("Digite o preço do custo: ");
+     scanf("%f", &precoCusto);
+    printf("Digite o preço da venda: ");
+    scanf("%f", &precoVenda);
+
+ if (precoCusto == precoVenda)
+ printf("Empatou!");
+ else{
+ if (precoCusto > precoVenda)
+ printf("Houve prejuizo!");
+ else
+ printf("Houve lucro!");
+ }
+ printf("\n");
+ system("pause");
+ return (0);
+}
+
+//3 Leia o nome	e as quatro	notas de um	aluno durante o semestre, e depois calcule a média aritmética dessas notas.
+	Se a média for maior ou	igual a (seis) o aluno será	aprovado. Se a média for menor	que	seis o programa	deverá	ler	a nota do exame	final e	calcular a nova média, da seguinte forma: Média	 Final	 = (Média+Exame	 Final)/2. Nesse caso, para ser aprovado a	média final	deverá	ser	maior ou igual a cinco
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ( )
+{
+    char nome [64];
+    int nota_1, nota_2, nota_3, nota_4, Media, EF, MF;
+    printf("Digite o seu nome: ");
+    scanf("%s", &nome);
+    printf("Digite a primeira nota: \n");
+    scanf("%d", &nota_1);
+    printf("Digite a segunda nota: \n");
+    scanf("%d", &nota_2);
+    printf("Digite a terceira nota: \n");
+    scanf("%d", &nota_3);
+    printf("Digite a quarta nota: \n");
+    scanf("%d", &nota_4);
+    Media= ((nota_1/4)+(nota_2/4)+(nota_3/4)+(nota_4/4));
+    MF=(Media+EF)/2;
+
+    if (Media>6){
+        printf ("Você esta aprovado");
+    }else{
+        printf ("Você esta de exame final");
+        printf("\n");
+        printf ("Insira o Valor da sua nota no exame final:");
+        scanf("%d", &EF);
+
+    if (MF>4)
+    printf ("Você esta aprovado");
+    else
+    printf ("Você esta reprovado");
+
+    }
+    printf("\n");
+    system("pause");
+    return (0);
+    }
+
+//4 Leia o	comprimento	de	3	pedaços	de	madeira	e	verifique	se	os	mesmos	podem	formar	um	
+        triângulo.	Se	formar	um	triângulo,	determine	e	informe o	tipo	de	triângulo:	
+        Equilátero	=	3	lados	iguais
+        Isósceles	=	2	lados	iguais
+        Escaleno	=	3	lados	diferentes
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ( )
+
+
+{
+    int a, b, c;
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &a);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &b);
+    printf("Digite o terceiro numero: ");
+    scanf("%d", &c);
+
+    if(a<(b+c) && b<(a+c) && c<(a+b))
+        {
+            if(a==b && b==c)
+              printf("Triangulo equilatero.");
+        else if(a==b || b==c || a==c)
+
+        printf("Triangulo isosceles.");
+        else if(a!=b && b!=c)
+        printf("Triangulo escaleno.");
+        }
+
+        else
+        printf("Não é um triangulo");
+        system("pause");
+        return (0);
+}
+
+//5 Ler	3 números e	informar o maior deles
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ( ){
+
+
+    int N1, N2, N3 ;
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &N1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &N2);
+    printf("Digite o terceiro numero: ");
+    scanf("%d", &N3);
+
+    if ((N1> N2)&&(N1 >N3)){
+    printf ("%d é o maior",N1);
+    }
+        else{
+        if ((N2 > N1)&& (N2>N3))
+            printf ("%d é o maior", N2);
+        else
+        printf("%d é o maior valor.", N3);
+        }
+            printf("\n");
+            system("pause");
+            return (0);
+     }
+
+//6 Uma	empresa	determinou um reajuste salarial	de 5% a	todos os seus funcionários.	Além	
+disto, concedeu um abono de R$	100,00 para aqueles	que	recebem	até	R$750,00.	Dado	o	
+valor	do	salário	de	um	funcionário,	informar	para	quanto	ele	será	reajustado. Desenvolva	
+um	algoritmo	para	atender	a	essa	demanda.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main ( )
+{
+        float sal, salMaior, salMenor, reaj;
+        printf("A empresa está passando por reajuste, informe seu salário para
+        saber quanto passará a receber: ");
+
+            scanf("%f", &sal);
+            salMaior=sal+(sal*0.05);
+            reaj=sal+(sal*0.05);
+            salMenor=100+reaj;
+            if (sal>750){
+            printf ("Você passará a receber %f",salMaior);
+            }
+            else{
+            printf ("Você passa a receber%f",salMenor);
+            }
+
+            printf("\n");
+            system("pause");
+            return (0);
+
+}
+
+
+//7 Suponha	 que	 os	 valores	 de	 entrada	 sejam	 1,	 0	 e	 -4.	 Qual	 seria	 a	 última	 informação	
+armazenada	 nas	 variáveis	 do	 código	 abaixo?	 Faça	 o	 teste	 de	 mesa,	 sem	 usar	 o	
+computador,	 obtenha	a	 resposta,	e	 somente	 depois	 use	 o	 computador	 para	 confirmar	a	
+sua	resposta.
+        #include	<stdio.h>
+        #include	<stdlib.h>
+        #include	<math.h>
+        int	main	(void)
+        {
+				float	x1,x2,delta;
+				int	a,b,c;
+				printf("Quais	os	coeficientes	da	equação?\n");
+				scanf("%i%i%i",&a,&b,&c);
+				delta	=	b*b-4*a*c;
+				if(delta>0)
+				{
+								printf("Delta	=	%.1f\n",delta);
+								printf("existem	duas	raizes	reais	distintas\n");
+                                	x1=(-b+sqrt(delta))/(2*a);
+								x2=(-b-sqrt(delta))/(2*a);
+								printf("x1	=	%.1f\tx2	=	%.1f\n",x1,x2);
+				}
+				else
+				{
+								if(delta = = 0)
+								{
+												printf("Delta	=	%.1f\n",delta);
+												printf("existe	uma	raiz	real\n");
+												x1=(-b+sqrt(delta))/(2*a);
+												printf("x	=	%.1f\n",x1);
+								}
+								else
+								{
+												printf("Delta	=	%.1f\n",delta);
+												printf("nao	existem	raizes	reais\n");
+								}
+				}
+				system("pause");
+				return	0;							
+}

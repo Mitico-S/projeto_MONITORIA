@@ -1,25 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+int main ( ){
+    
+    int num;
 
 
-   int main (void){
+    for(num = 5; num <=50; num++5){
 
-        printf("Seu carro e' um cachaceiro, descubra aqui\n");
-
-        float consumo, litro, km;
-
-        printf("Digite a quilometragem\n");
-        scanf("%f", &km);
-        
-        printf("Digite quantos litros\n");
-        scanf("%f", litro);
-
-        consumo = km/litro;
-
-        printf("O consumo é de %f", consumo);
-
-        return 0;
-
+        printf("%d\n", num);
 
     }
+
+
+    system("pause");
+    system("cls");
+
+
+
+
+
+
+}
