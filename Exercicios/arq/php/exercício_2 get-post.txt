@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <div> 
+        <fieldset style="max-width: 300px; padding-top: 20px">
+            <legend> O que achou do Switch? </legend>
+                <form action="index.php" method="get">
+                    <input type="radio" value="otimo"  name="select">Ótimo</input>
+                    <input type="radio" value="bom"    name="select">Bom</input>
+                    <input type="radio" value="regular"name="select">Regular</input>
+                    <input type="radio" value="ruim"   name="select">Um lixo</input>
+                    
+                    <center>
+                        <input type="submit" value="enviar" id="enviar" name="enviar" style="margin-top: 2px" onClick="window.alert('Resposta salva com sucesso');"/>
+                    </center>
+            </form>
+
+        </fieldset>
+    </div>
+    
+</body>
+</html>
+
+ <?php
+
+   $select = $_GET["select"];
+
+    switch ($select){
+
+        case "otimo":
+            echo "Que bom que adorou o switch";
+        break; 
+        case "bom":
+            echo "Gostou dele? que bacana";
+        break;
+        case "regular":
+            echo "Regular? conte-nos o motivo";
+        break;
+        case "ruim":
+            echo "Então vola lá para o seus milhares de if e else";
+        break;
+    }
+    
+    return $select;
+
+?>  
+
