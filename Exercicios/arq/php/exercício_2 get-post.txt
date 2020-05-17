@@ -42,7 +42,7 @@
             echo "Regular? conte-nos o motivo";
         break;
         case "ruim":
-            echo "Então vola lá para o seus milhares de if e else";
+            echo "Então volta lá para o seus milhares de if e else";
         break;
     }
     
